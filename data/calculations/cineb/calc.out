@@ -1,0 +1,607 @@
+ DBCSR| CPU Multiplication driver                                           XSMM (U)
+ DBCSR| Multrec recursion limit                                              512 (U)
+ DBCSR| Multiplication stack size                                           1000 (D)
+ DBCSR| Maximum elements for images                                    UNLIMITED (U)
+ DBCSR| Multiplicative factor virtual images                                   1 (U)
+ DBCSR| Use multiplication densification                                       T (D)
+ DBCSR| Multiplication size stacks                                             3 (U)
+ DBCSR| Use memory pool for CPU allocation                                     F (U)
+ DBCSR| Number of 3D layers                                               SINGLE (U)
+ DBCSR| Use MPI memory allocation                                              F (U)
+ DBCSR| Use RMA algorithm                                                      F (U)
+ DBCSR| Use Communication thread                                               T (U)
+ DBCSR| Communication thread load                                             87 (D)
+ DBCSR| MPI: My process id                                                     0
+ DBCSR| MPI: Number of processes                                               5
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00 (U)
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2026-10-27 17:29:17.890
+ ***** ** ***  *** **   PROGRAM STARTED ON                          [redacted]
+ **    ****   ******    PROGRAM STARTED BY                                  [redacted]
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2203945
+  **** **  *******  **  PROGRAM STARTED IN <cluster-path>
+                                           e-cineb-20261027/jobs/cineb
+
+ CP2K| version string:                                       CP2K version 2026.2
+ CP2K| source code revision number:                                  git:c92cc08
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel scalapack mpi_f08 cosma l
+ CP2K|            ibxs libxsmm plumed2 spglib libdftd4 dftd4_v4_2 s_dftd3 mctc-l
+ CP2K|            lib tblite sirius sirius_dftd3 sirius_dftd4 sirius_vcsqnm libv
+ CP2K|            vori libbqb mimic libvdwxc hdf5 trexio libfci libsmeagol green
+ CP2K|            nx
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                                   2026-09-01 17:20:03
+ CP2K| Program compiled on                                          [host]
+ CP2K| Program compiled for                                               x86_64
+ CP2K| Data directory path                   <cp2k-install>/data
+ CP2K| Input file name                                                  calc.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           BASIS_SET
+ GLOBAL| Potential file name                                           POTENTIAL
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                           ../../structures/hcp.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                        neb
+ GLOBAL| Run type                                                           BAND
+ GLOBAL| FFT library                                                       FFTW3
+ GLOBAL| Diagonalization library                                            ELPA
+ GLOBAL| Cholesky decomposition library                                ScaLAPACK
+ GLOBAL| DGEMM library                                                      BLAS
+ GLOBAL| Minimum number of eigenvectors for ELPA usage                        64
+ GLOBAL| Orthonormality check for eigenvectors                          DISABLED
+ GLOBAL| Matrix multiplication library                                     COSMA
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Grid backend                                                       AUTO
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                             5
+ GLOBAL| Number of distributed systems (nodes)                                 1
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| OpenMP stack size per thread (OMP_STACKSIZE)                    default
+ GLOBAL| CPU model name                Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz
+ GLOBAL| CPUID                                                              1002
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal             65444008      65444008      65444008      65444008
+ MEMORY| MemFree              61890580      61890580      61890580      61890580
+ MEMORY| Buffers                   192           192           192           192
+ MEMORY| Cached                2034612       2034612       2034612       2034612
+ MEMORY| Slab                   272604        272604        272604        272604
+ MEMORY| SReclaimable            80408         80408         80408         80408
+ MEMORY| MemLikelyFree        64005792      64005792      64005792      64005792
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+
+                  #####   #####        #          ####### ######   
+                 #     # #     #      #              #    #     #  
+                 #     # #           #    ##   ##    #    #     #  
+                 #     #  #####     #      ## ##     #    ######   
+                 #   # #       #   #        ###      #    #     #  
+                 #    #  #     #  #        ## ##     #    #     #  
+                  #### #  #####  #        ##   ##    #    ######   
+
+                                   GFN1-xTB 
+                                 Version 1.1                       
+                            J. Hutter and A. Hehn                  
+
+
+ EWALD| Summation is done by:                                               SPME
+ EWALD| Alpha parameter [       ANGSTROM^-1]                              0.3500
+ EWALD| Real Space Cutoff [          ANGSTROM]                            9.6398
+ EWALD| G-space max. Miller index                         27        27       125
+ EWALD| Spline interpolation order                                             6
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   2
+                             - Atoms:                                         65
+                             - Shell sets:                                   194
+                             - Shells:                                       194
+                             - Primitive Cartesian functions:               1164
+                             - Cartesian basis functions:                    644
+                             - Spherical basis functions:                    580
+
+  Maximum angular momentum of the orbital basis functions:                     2
+
+
+ SCF PARAMETERS         Density guess:                                    ATOMIC
+                        --------------------------------------------------------
+                        max_scf:                                              20
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       0.00E+00
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                             0.000000
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         1.00E-06
+                        max_scf                                               10
+                        No outer loop optimization
+                        step_size                                       5.00E-01
+ NEB| Replica_env Setup. START
+ REPLICA| layout of the replica grid, number of groups                         5
+ REPLICA| layout of the replica grid, size of each group                       1
+ REPLICA| MPI process to grid (group,rank) correspondence:
+  (   0 :    0,   0)  (   1 :    1,   0)  (   2 :    2,   0)  (   3 :    3,   0)
+  (   4 :    4,   0)
+ NEB| Replica_env Setup. END
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **  ########     ###    ##    ## ########    Nudged Elastic Band Method      **
+ **  ##     ##   ## ##   ###   ## ##     ##   String Method                   **
+ **  ##     ##  ##   ##  ####  ## ##     ##                                   **
+ **  ########  ##     ## ## ## ## ##     ##   Number of Images :            5 **
+ **  ##     ## ######### ##  #### ##     ##   Number of Replicas:           5 **
+ **  ##     ## ##     ## ##   ### ##     ##   Number of Procs/Rep:          1 **
+ **  ########  ##     ## ##    ## ########                                    **
+ **                                           T. Laino  2009 - 2015           **
+ *******************************************************************************
+ *******************************************************************************
+
+ NEB| Building initial set of coordinates. START
+ NEB| Building initial set of coordinates. END
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               0
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315185 (*-)         0.000000  |   O
+ DISTANCE =          0.715865                      |
+       2      -296.65422539 (+-)         0.000000  |               O
+ DISTANCE =          0.715865                      |
+       3      -296.64678314 (++)         0.000000  |                         X
+ DISTANCE =          0.715865                      |
+       4      -296.65595897 (-+)         0.000000  |            O
+ DISTANCE =          0.715865                      |
+       5      -296.66583700 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.28595634864269
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               1
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315227 (*-)         0.000000  |    O
+ DISTANCE =          0.733567                      |
+       2      -296.65590327 (+-)         0.000000  |                 O
+ DISTANCE =          0.729764                      |
+       3      -296.65150388 (++)         0.000000  |                         X
+ DISTANCE =          0.729236                      |
+       4      -296.65763952 (-+)         0.000000  |              O
+ DISTANCE =          0.734171                      |
+       5      -296.66583744 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29403570646764
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0121260894     [    0.0010000000 ] ( NO)
+ MAX DISPLACEMENT              =      0.3018565236     [    0.0020000000 ] ( NO)
+ RMS FORCE                     =      0.0002113458     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0039080988     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               2
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315230 (*-)         0.000000  |    O
+ DISTANCE =          0.733421                      |
+       2      -296.65598393 (+-)         0.000000  |                 O
+ DISTANCE =          0.728567                      |
+       3      -296.65156873 (++)         0.000000  |                         X
+ DISTANCE =          0.726850                      |
+       4      -296.65772041 (-+)         0.000000  |              O
+ DISTANCE =          0.733688                      |
+       5      -296.66583740 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29426144826152
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0015495442     [    0.0010000000 ] ( NO)
+ MAX DISPLACEMENT              =      0.0286533838     [    0.0020000000 ] ( NO)
+ RMS FORCE                     =      0.0000275663     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0005574704     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               3
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315215 (*-)         0.000000  |    O
+ DISTANCE =          0.730479                      |
+       2      -296.65601536 (+-)         0.000000  |                 O
+ DISTANCE =          0.729691                      |
+       3      -296.65156900 (++)         0.000000  |                         X
+ DISTANCE =          0.730658                      |
+       4      -296.65777301 (-+)         0.000000  |              O
+ DISTANCE =          0.729365                      |
+       5      -296.66583704 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29434652968416
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0002988713     [    0.0010000000 ] (YES)
+ MAX DISPLACEMENT              =      0.0060440415     [    0.0020000000 ] ( NO)
+ RMS FORCE                     =      0.0000383143     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0010199841     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               4
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315219 (*-)         0.000000  |    O
+ DISTANCE =          0.728080                      |
+       2      -296.65603840 (+-)         0.000000  |                 O
+ DISTANCE =          0.673218                      |
+       3      -296.65153594 (++)         0.000000  |                         X
+ DISTANCE =          0.787527                      |
+       4      -296.65772753 (-+)         0.000000  |              O
+ DISTANCE =          0.732461                      |
+       5      -296.66583752 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29404898628491
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0019323990     [    0.0010000000 ] ( NO)
+ MAX DISPLACEMENT              =      0.0514433269     [    0.0020000000 ] ( NO)
+ RMS FORCE                     =      0.0001274535     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0024000415     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               5
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315233 (*-)         0.000000  |    O
+ DISTANCE =          0.702415                      |
+       2      -296.65635525 (+-)         0.000000  |                O
+ DISTANCE =          0.700405                      |
+       3      -296.65153789 (++)         0.000000  |                         X
+ DISTANCE =          0.758834                      |
+       4      -296.65735843 (-+)         0.000000  |              O
+ DISTANCE =          0.758994                      |
+       5      -296.66583741 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29413874388797
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0012307169     [    0.0010000000 ] ( NO)
+ MAX DISPLACEMENT              =      0.0231752807     [    0.0020000000 ] ( NO)
+ RMS FORCE                     =      0.0000193109     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0005335546     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                              SD
+ STEP NUMBER                   =                                               6
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315222 (*-)         0.000000  |    O
+ DISTANCE =          0.701049                      |
+       2      -296.65636605 (+-)         0.000000  |                O
+ DISTANCE =          0.702136                      |
+       3      -296.65153765 (++)         0.000000  |                         X
+ DISTANCE =          0.758140                      |
+       4      -296.65735963 (-+)         0.000000  |              O
+ DISTANCE =          0.759204                      |
+       5      -296.66583714 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29415070196524
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0001524002     [    0.0010000000 ] (YES)
+ MAX DISPLACEMENT              =      0.0042107652     [    0.0020000000 ] ( NO)
+ RMS FORCE                     =      0.0000037903     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0000774631     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ BAND TYPE                     =                                          CI-NEB
+ BAND TYPE OPTIMIZATION        =                                            DIIS
+ STEP NUMBER                   =                                               7
+ NUMBER OF NEB REPLICA         =                                               5
+ REPLICA             ENERGY [au]  TEMPERATURE [K]  o-------------------------> E
+       1      -296.66315227 (*-)         0.000000  |    O
+ DISTANCE =          0.701173                      |
+       2      -296.65636448 (+-)         0.000000  |                O
+ DISTANCE =          0.702148                      |
+       3      -296.65153755 (++)         0.000000  |                         X
+ DISTANCE =          0.758122                      |
+       4      -296.65736139 (-+)         0.000000  |              O
+ DISTANCE =          0.759081                      |
+       5      -296.66583720 (-*)         0.000000  |O
+                                                   v Nr.
+ NUMBER OF LOCAL MAXIMA (X) and MINIMA (x):    1    0
+ BAND TOTAL ENERGY [au]        =                            -1483.29415134021428
+ *******************************************************************************
+ *******************************************************************************
+ RMS DISPLACEMENT              =      0.0000072161     [    0.0010000000 ] (YES)
+ MAX DISPLACEMENT              =      0.0001225700     [    0.0020000000 ] (YES)
+ RMS FORCE                     =      0.0000036765     [    0.0030000000 ] (YES)
+ MAX FORCE                     =      0.0000790832     [    0.0045000000 ] (YES)
+ *******************************************************************************
+
+ *******************************************************************************
+ ***                           BAND TASK COMPLETED                           ***
+ *******************************************************************************
+
+ dump_neb_final: Band task converged, writing XYZ trajectory gladly:
+  neb-FINAL-1.xyz
+
+ dump_neb_final: Done!
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                DBCSR STATISTICS                             -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ COUNTER                                    TOTAL       BLAS       SMM       ACC
+ flops     4 x     3 x     3                26928       0.0%    100.0%      0.0%     
+ flops     4 x     3 x     4               510048       0.0%    100.0%      0.0%     
+ flops     4 x    32 x     3              1579776       0.0%    100.0%      0.0%     
+ flops     4 x     3 x    32              1579776       0.0%    100.0%      0.0%     
+ flops     3 x     3 x   580              1952280       0.0%    100.0%      0.0%     
+ flops     9 x     3 x     3              3877632       0.0%    100.0%      0.0%     
+ flops     4 x     4 x   355             26480160       0.0%    100.0%      0.0%     
+ flops     4 x    32 x     4             59845632       0.0%    100.0%      0.0%     
+ flops     4 x     3 x     9             73446912       0.0%    100.0%      0.0%     
+ flops     9 x     3 x     4             73446912       0.0%    100.0%      0.0%     
+ flops    32 x     3 x   580            104121600       0.0%    100.0%      0.0%     
+ flops     3 x    32 x   580            124945920       0.0%    100.0%      0.0%     
+ flops     4 x    32 x    32            202211328       0.0%    100.0%      0.0%     
+ flops     9 x    32 x     3            227487744       0.0%    100.0%      0.0%     
+ flops     9 x     3 x    32            227487744       0.0%    100.0%      0.0%     
+ flops     4 x     9 x   355           1906571520       0.0%    100.0%      0.0%     
+ flops     9 x     4 x   355           1906571520       0.0%    100.0%      0.0%     
+ flops     4 x    32 x     9           8617771008       0.0%    100.0%      0.0%     
+ flops     9 x    32 x     4           8617771008       0.0%    100.0%      0.0%     
+ flops     9 x     3 x     9          10576355328       0.0%    100.0%      0.0%     
+ flops    32 x    32 x   580          14660321280       0.0%    100.0%      0.0%     
+ flops     9 x    32 x    32          29118431232       0.0%    100.0%      0.0%     
+ flops     9 x     9 x   355         278836084800       0.0%    100.0%      0.0%     
+ flops   580 x   355 x   580         477926844000       0.0%    100.0%      0.0%     
+ flops   355 x   355 x   355         656050863000       0.0%    100.0%      0.0%     
+ flops   355 x   355 x   580        1033410041000       0.0%    100.0%      0.0%     
+ flops     9 x    32 x     9        1240959025152       0.0%    100.0%      0.0%     
+ flops   580 x   355 x   355        1271259544000       0.0%    100.0%      0.0%     
+ flops inhomo. stacks                           0       0.0%      0.0%      0.0%
+ flops total                         5.034975E+12       0.0%    100.0%      0.0%
+ flops max/rank                      1.606952E+12       0.0%    100.0%      0.0%
+ matmuls inhomo. stacks                         0       0.0%      0.0%      0.0%
+ matmuls total                          276304959       0.0%    100.0%      0.0%
+ number of processed stacks                351539       0.0%    100.0%      0.0%
+ average stack size                                     0.0     786.0       0.0
+ marketing flops                     5.373526E+12
+ -------------------------------------------------------------------------------
+ # multiplications                           2452
+ max memory usage/rank               1.056485E+09
+ # max total images/rank                        1
+ # max 3D layers                                1
+ # MPI messages exchanged                       0
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                      DBCSR MESSAGE PASSING PERFORMANCE                      -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Bcast               29                     12.
+ MP_Allreduce        11089                      8.
+ MP_Alltoall         14924                 652369.
+ MP_ISend             9672                  22638.
+ MP_IRecv             9672                  22638.
+ -------------------------------------------------------------------------------
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                          OFFLOAD MEMPOOL STATISTICS                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ Memory consumption                Number of allocations  Used [MiB]  Size [MiB]
+ Host                                                  7           4           0
+ -------------------------------------------------------------------------------
+
+ MEMORY| Estimated peak process memory [MiB]                                 352
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                         MESSAGE PASSING PERFORMANCE                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Group                3
+ MP_Bcast               21                 402271.
+ MP_Allreduce           55                    744.
+ MP_Sync                 2
+ MP_comm_split           2
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                           R E F E R E N C E S                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ 
+ CP2K version 2026.2, the CP2K developers group (2026).
+ CP2K is freely available from https://www.cp2k.org/ .
+ 
+ M. Iannuzzi, J. Wilhelm, F. Stein, A. Bussy, H. Elgabarty, D. Golze, A. Hehn, 
+ M. Graml, S. Marek, B. Sertcan Gökmen, C. Schran, H. Forbert, R. Z. 
+ Khaliullin, A. Kozhevnikov, M. Taillefumier, R. Meli, V. V. Rybkin, M. Brehm, 
+ R. Schade, O. Schütt, J. V. Pototschnig, H. Mirhosseini, A. Knüpfer, D. Marx, 
+ M. Krack, J. Hutter, T. D. Kühne.
+ J. Phys. Chem. B 130, 1237-1310 (2026).
+ The CP2K Program Package Made Simple.
+ https://doi.org/10.1021/acs.jpcb.5c05851
+
+ L. Wittmann, I. Gordiy, M. Friede, B. Helmich-Paris, S. Grimme, A. Hansen, M. 
+ Bursch.
+ Phys. Chem. Chem. Phys. 26, 21379-21394 (2024).
+ Extension of the D3 and D4 London dispersion corrections to the full actinides 
+ series.
+ https://doi.org/10.1039/d4cp01514b
+
+ T. D. Kühne, M. Iannuzzi, M. Del Ben, V. V. Rybkin, P. Seewald, F. Stein, T. 
+ Laino, R. Z. Khaliullin, O. Schütt, F. Schiffmann, D. Golze, J. Wilhelm, S. 
+ Chulkov, M. H. Bani-Hashemian, V. Weber, U. Borstnik, M. Taillefumier, A. S. 
+ Jakobovits, A. Lazzaro, H. Pabst, T. Müller, R. Schade, M. Guidon, S. 
+ Andermatt, N. Holmberg, G. K. Schenter, A. Hehn, A. Bussy, F. Belleflamme, G. 
+ Tabacchi, A. Glöß, M. Lass, I. Bethune, C. J. Mundy, C. Plessl, M. Watkins, 
+ J. VandeVondele, M. Krack, J. Hutter.
+ J. Chem. Phys. 152, 194103 (2020).
+ CP2K: An electronic structure and molecular dynamics software package - 
+ Quickstep: Efficient and accurate electronic structure calculations.
+ https://doi.org/10.1063/5.0007045
+
+ P. Pracht, E. Caldeweyher, S. Ehlert, S. Grimme.
+ ChemRxiv, (2019).
+ A Robust Non-Self-Consistent Tight-Binding Quantum Chemistry Method for large 
+ Molecules.
+ https://doi.org/10.26434/chemrxiv.8326202.v1
+
+ S. Grimme, C. Bannwarth, P. Shushkov.
+ J. Chem. Theory Comput. 13, 1989 (2017).
+ A Robust and Accurate Tight-Binding Quantum Chemical Method for Structures, 
+ Vibrational Frequencies, and Noncovalent Interactions of Large Molecular 
+ Systems Parametrized for All spd-Block Elements (Z = 1-86).
+ https://doi.org/10.1021/acs.jctc.7b00118
+
+ L. Goerigk, A. Hansen, C. Bauer, S. Ehrlich, A. Najibi, S. Grimme.
+ Phys. Chem. Chem. Phys. 19, 32184-32215 (2017).
+ A look at the density functional theory zoo with the advanced GMTKN55 database 
+ for general main group thermochemistry, kinetics and noncovalent interactions.
+ https://doi.org/10.1039/C7CP04913G
+
+ O. Schuett, P. Messmer, J. Hutter, J. VandeVondele.
+ Electronic Structure Calculations on Graphics Processing Units, 173-190 (2016).
+ GPU-Accelerated Sparse Matrix-Matrix Multiplication for Linear Scaling Density 
+ Functional Theory.
+ https://doi.org/10.1002/9781118670712.ch8
+
+ A. Heinecke, G. Henry, M. Hutchinson, H. Pabst.
+ Proceedings of Intl. Supercomputing Conference, 981-991 (2016).
+ LIBXSMM: Accelerating Small Matrix Multiplications by Runtime Code Generation.
+ https://doi.org/10.1109/SC.2016.83
+
+ U. Borstnik, J. VandeVondele, V. Weber, J. Hutter.
+ Parallel Comput. 40, 47-58 (2014).
+ Sparse matrix multiplication: The distributed block-compressed sparse row 
+ library.
+ https://doi.org/10.1016/j.parco.2014.03.012
+
+ A. Marek, V. Blum, R. Johanni, V. Havu, B. Lang, T. Auckenthaler, A. Heinecke, 
+ H. Bungartz, H. Lederer.
+ J. Phys. Condens. Matter 26, 213201 (2014).
+ The ELPA library: scalable parallel eigenvalue solutions for electronic 
+ structure theory and computational science.
+ https://doi.org/10.1088/0953-8984/26/21/213201
+
+ S. Grimme, S. Ehrlich, L. Goerigk.
+ J. Comput. Chem. 32, 1456 (2011).
+ Effect of the damping function in dispersion corrected density functional 
+ theory.
+ https://doi.org/10.1002/jcc.21759
+
+ S. Grimme, J. Antony, S. Ehrlich, H. Krieg.
+ J. Chem. Phys. 132, 154104 (2010).
+ A consistent and accurate ab initio parametrization of density functional 
+ dispersion correction (DFT-D) for the 94 elements H-Pu.
+ https://doi.org/10.1063/1.3382344
+
+ T. D. Kühne, M. Krack, F. R. Mohamed, M. Parrinello.
+ Phys. Rev. Lett. 98, 066401 (2007).
+ Efficient and accurate Car-Parrinello-like approach to Born-Oppenheimer 
+ molecular dynamics.
+ https://doi.org/10.1103/PhysRevLett.98.066401
+
+ M. Frigo, S. G. Johnson.
+ Proc. IEEE 93, 216-231 (2005).
+ The design and implementation of FFTW3.
+ https://doi.org/10.1109/JPROC.2004.840301
+
+ J. Kolafa.
+ J. Comput. Chem. 25, 335-342 (2004).
+ Time-reversible always stable predictor-corrector method for molecular dynamics 
+ of polarizable molecules.
+ https://doi.org/10.1002/jcc.10385
+
+ J. VandeVondele, J. Hutter.
+ J. Chem. Phys. 118, 4365-4369 (2003).
+ An efficient orbital transformation method for electronic structure 
+ calculations.
+ https://doi.org/10.1063/1.1543154
+
+ G. Henkelman, B. P. Uberuaga, H. Jonsson.
+ J. Chem. Phys. 113, 9901-9904 (2000).
+ A climbing image nudged elastic band method for finding saddle points and 
+ minimum energy paths.
+ https://doi.org/10.1063/1.1329672
+
+ G. Henkelman, H. Jonsson.
+ J. Chem. Phys. 113, 9978-9985 (2000).
+ Improved tangent estimate in the nudged elastic band method for finding minimum 
+ energy paths and saddle points.
+ https://doi.org/10.1063/1.1323224
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                T I M I N G                                  -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
+                                MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
+ CP2K                                 1  1.0    0.062    0.063  196.837  196.838
+ neb                                  1  2.0  196.327  196.360  196.508  196.540
+ -------------------------------------------------------------------------------
+
+ The number of warnings for this run is : 0
+ 
+ -------------------------------------------------------------------------------
+  **** **** ******  **  PROGRAM ENDED AT                 2026-10-27 17:32:35.087
+ ***** ** ***  *** **   PROGRAM RAN ON                              [redacted]
+ **    ****   ******    PROGRAM RAN BY                                      [redacted]
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2203945
+  **** **  *******  **  PROGRAM STOPPED IN <cluster-path>
+                                           e-cineb-20261027/jobs/cineb

@@ -1,0 +1,313 @@
+{
+  "jobid": "5763",
+  "collection": "received/cineb-5763-20261027T093419Z",
+  "source": {
+    "sources": {
+      "hcp": {
+        "geometry": "analysis/course-hcp-5759/final.xyz",
+        "geometry_sha256": "3d093f28c354cd5b1830710c779f45f467b752521fbe8d4f295a29fe324b6a91",
+        "optimization_audit": "analysis/course-hcp-5759/audit.json",
+        "optimization_sha256": "526349302ca087a73299963724b9a3cd46a0d8265653a0d7242fe308a5b54ee2",
+        "frequency_audit": "analysis/course-hcp-frequency-5761/audit.json",
+        "frequency_sha256": "5d58ff6d6306d5b6f997ae0d1b290240aec73bd995c84865dfe74e73b76dfa8b"
+      },
+      "fcc": {
+        "geometry": "analysis/course-fcc-5760/final.xyz",
+        "geometry_sha256": "2df53cc2dc9daee465a50ee62c0e6d44d0e6c808785d41f09e6b6046744d4830",
+        "optimization_audit": "analysis/course-fcc-5760/audit.json",
+        "optimization_sha256": "dc892d9a1ad863a48e490cc8ad4c03f404952e999cdb71de86cf2146cb802acd",
+        "frequency_audit": "analysis/course-fcc-frequency-5762/audit.json",
+        "frequency_sha256": "b4036b33c53a8067bb3acf4bf776e6b42d01329e7eb0688ae4c24d38552ed187"
+      }
+    },
+    "template": "references/course-assets/neb.inp",
+    "template_sha256": "2fe6312308bcf77c2bc717104f7316ab9e8f5108ef2851627d296d3546d61f92",
+    "filled_fields": [
+      "RUN_TYPE BAND",
+      "CELL A/B/C, PERIODIC XYZ",
+      "TOPOLOGY source file",
+      "BAND_TYPE CI-NEB",
+      "two REPLICA files",
+      "NUMBER_OF_REPLICA 5"
+    ],
+    "all_other_course_settings_unchanged": true,
+    "Cu_max_endpoint_difference_A": 0.0,
+    "O_endpoint_separation_A": 1.5152767353748249,
+    "only_active_atom_one_based": 65,
+    "number_of_images_including_endpoints": 5,
+    "generated_intermediate_images": "CP2K iterative bisection from two endpoints",
+    "maximum_band_steps": 100,
+    "band_force_threshold_Eh_bohr": 0.0045,
+    "band_rms_force_threshold_Eh_bohr": 0.003,
+    "endpoint_optimization": false,
+    "alignment": false,
+    "rotation": false,
+    "initial_IT_NEB_steps": 2,
+    "cold_start": true,
+    "old_wfn": false,
+    "smearing": false,
+    "acceptance": "All SCFs, actual whole-band criteria, interior peak, unchanged Cu and endpoints, O path, then independent TS numerical frequency and residual gradient. No automatic retry or threshold change."
+  },
+  "final_step": 7,
+  "climbing_image_one_based": 3,
+  "energies_Eh": [
+    -296.6631522669268,
+    -296.6563644766726,
+    -296.6515375475459,
+    -296.65736139317136,
+    -296.6658372021572
+  ],
+  "electronic_relative_eV": [
+    0.0,
+    0.18470518236323216,
+    0.31605261521169464,
+    0.15757770246037328,
+    -0.07306080960079747
+  ],
+  "forward_barrier_eV": 0.31605261521169464,
+  "reverse_barrier_eV": 0.3891134248124921,
+  "O_coordinates_A": [
+    [
+      7.995058500000001,
+      3.085904070000001,
+      27.410673770000002
+    ],
+    [
+      7.683105211531116,
+      3.2646418511915125,
+      27.50239165073236
+    ],
+    [
+      7.363703301125139,
+      3.449283806090464,
+      27.546518692458488
+    ],
+    [
+      7.0187187525218855,
+      3.6489924963916427,
+      27.50126393675527
+    ],
+    [
+      6.683449010000002,
+      3.8445736500000014,
+      27.397844160000005
+    ]
+  ],
+  "O_path_arc_length_A": [
+    0.0,
+    0.3710447658407958,
+    0.7426055652954655,
+    1.1437861887938603,
+    1.5454744237741431
+  ],
+  "O_chord_fraction": [
+    0.0,
+    0.23674740976054107,
+    0.4799665793667506,
+    0.7432774566967857,
+    1.0
+  ],
+  "last_criteria_atomic_units": {
+    "RMS DISPLACEMENT": {
+      "value": 7.2161e-06,
+      "threshold": 0.001,
+      "flag": "YES"
+    },
+    "MAX DISPLACEMENT": {
+      "value": 0.00012257,
+      "threshold": 0.002,
+      "flag": "YES"
+    },
+    "RMS FORCE": {
+      "value": 3.6765e-06,
+      "threshold": 0.003,
+      "flag": "YES"
+    },
+    "MAX FORCE": {
+      "value": 7.90832e-05,
+      "threshold": 0.0045,
+      "flag": "YES"
+    }
+  },
+  "max_fixed_Cu_error_A": 1.4210854715202004e-14,
+  "max_trajectory_fixed_Cu_error_A": 0.0,
+  "SCF_records": [
+    {
+      "image_one_based": 1,
+      "force_evaluations": 33,
+      "converged_count": 33,
+      "max_residual": 1e-06,
+      "electrons": [
+        710
+      ],
+      "normal_end": true,
+      "sha256": "364e5f4bf28b64715f42f55fd5b606880fbe3a03b04f245343e99b4dde608737"
+    },
+    {
+      "image_one_based": 2,
+      "force_evaluations": 33,
+      "converged_count": 33,
+      "max_residual": 1e-06,
+      "electrons": [
+        710
+      ],
+      "normal_end": true,
+      "sha256": "b2ce7449fb434bad654c37ba82701b52988349badea9372620ccfda19504a465"
+    },
+    {
+      "image_one_based": 3,
+      "force_evaluations": 33,
+      "converged_count": 33,
+      "max_residual": 1e-06,
+      "electrons": [
+        710
+      ],
+      "normal_end": true,
+      "sha256": "85658d67ff27bf05ac5f833dbc60d8698e6834cf6df2cfc535603263c4267cb6"
+    },
+    {
+      "image_one_based": 4,
+      "force_evaluations": 33,
+      "converged_count": 33,
+      "max_residual": 1e-06,
+      "electrons": [
+        710
+      ],
+      "normal_end": true,
+      "sha256": "ca08b1f0d8734ffc4ca2d4bf0fccfb29a67a94bb5ae922c76bfa4caaef7d4cca"
+    },
+    {
+      "image_one_based": 5,
+      "force_evaluations": 33,
+      "converged_count": 33,
+      "max_residual": 1e-06,
+      "electrons": [
+        710
+      ],
+      "normal_end": true,
+      "sha256": "f22ba00353638947ae447300e184c0fc68962386929f3098e576fbad7d5991dd"
+    }
+  ],
+  "band_history_table": [
+    [
+      0.0,
+      -296.663151846,
+      -296.654225391,
+      -296.646783142,
+      -296.655958966,
+      -296.665837003,
+      0.715864511,
+      0.715864511,
+      0.715864511,
+      0.715864511
+    ],
+    [
+      1.0,
+      -296.663152269,
+      -296.655903266,
+      -296.651503879,
+      -296.657639516,
+      -296.665837439,
+      0.733567069,
+      0.729763916,
+      0.729235944,
+      0.734171028
+    ],
+    [
+      2.0,
+      -296.663152296,
+      -296.655983933,
+      -296.65156873,
+      -296.657720405,
+      -296.665837402,
+      0.733420751,
+      0.728567159,
+      0.726850279,
+      0.733688297
+    ],
+    [
+      3.0,
+      -296.66315215,
+      -296.656015359,
+      -296.651569003,
+      -296.657773005,
+      -296.665837043,
+      0.730478669,
+      0.729691395,
+      0.730657891,
+      0.729365146
+    ],
+    [
+      4.0,
+      -296.663152192,
+      -296.656038397,
+      -296.651535936,
+      -296.657727532,
+      -296.665837524,
+      0.728079578,
+      0.673218462,
+      0.787527112,
+      0.732460508
+    ],
+    [
+      5.0,
+      -296.66315233,
+      -296.656355247,
+      -296.651537891,
+      -296.657358432,
+      -296.665837411,
+      0.702415339,
+      0.700405024,
+      0.758834279,
+      0.758994189
+    ],
+    [
+      6.0,
+      -296.663152223,
+      -296.656366053,
+      -296.651537649,
+      -296.657359628,
+      -296.665837136,
+      0.701049107,
+      0.702135556,
+      0.75813954,
+      0.759203718
+    ],
+    [
+      7.0,
+      -296.663152267,
+      -296.656364477,
+      -296.651537548,
+      -296.657361393,
+      -296.665837202,
+      0.70117299,
+      0.702148153,
+      0.758121508,
+      0.759080755
+    ]
+  ],
+  "checks": {
+    "scheduler_completed_exact_directory": true,
+    "jobid_and_submission_identity": true,
+    "zero_exit_and_normal_end": true,
+    "all_manifest_hashes_match": true,
+    "endpoint_source_hashes_match": true,
+    "course_template_only_required_fields": true,
+    "actual_band_converged": true,
+    "within_100_steps": true,
+    "all_replica_SCFS_converged": true,
+    "five_images_composition": true,
+    "restart_final_xyz_agree": true,
+    "cell_unchanged": true,
+    "all_fixed_Cu_unchanged": true,
+    "endpoints_unchanged": true,
+    "final_energies_match_table_and_xyz": true,
+    "interior_peak_above_both_ends": true,
+    "adjacent_O_path_monotone": true,
+    "trajectory_complete": true
+  },
+  "accepted_path": true,
+  "saddle_frequency_verified": false,
+  "force_interpretation": "Printed BAND force is the effective band convergence force. Raw peak gradient is independently evaluated in the following numerical frequency job.",
+  "stage_interpretation": "One CI-NEB run with two initial IT-NEB iterations, not two separately converged NEB and CI-NEB paths."
+}

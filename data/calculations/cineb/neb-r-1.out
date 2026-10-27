@@ -1,0 +1,134 @@
+
+  **** **** ******  **  PROGRAM STARTED AT               2026-10-27 17:29:17.890
+ ***** ** ***  *** **   PROGRAM STARTED ON                          [redacted]
+ **    ****   ******    PROGRAM STARTED BY                                  [redacted]
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2203946
+  **** **  *******  **  PROGRAM STARTED IN <cluster-path>
+                                           e-cineb-20261027/jobs/cineb
+
+ CP2K| version string:                                       CP2K version 2026.2
+ CP2K| source code revision number:                                  git:c92cc08
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel scalapack mpi_f08 cosma l
+ CP2K|            ibxs libxsmm plumed2 spglib libdftd4 dftd4_v4_2 s_dftd3 mctc-l
+ CP2K|            lib tblite sirius sirius_dftd3 sirius_dftd4 sirius_vcsqnm libv
+ CP2K|            vori libbqb mimic libvdwxc hdf5 trexio libfci libsmeagol green
+ CP2K|            nx
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                                   2026-09-01 17:20:03
+ CP2K| Program compiled on                                          [host]
+ CP2K| Program compiled for                                               x86_64
+ CP2K| Data directory path                   <cp2k-install>/data
+ CP2K| Input file name                                               neb-r-1.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           BASIS_SET
+ GLOBAL| Potential file name                                           POTENTIAL
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                           ../../structures/hcp.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                    neb-r-1
+ GLOBAL| Run type                                                           BAND
+ GLOBAL| FFT library                                                       FFTW3
+ GLOBAL| Diagonalization library                                            ELPA
+ GLOBAL| Cholesky decomposition library                                ScaLAPACK
+ GLOBAL| DGEMM library                                                      BLAS
+ GLOBAL| Minimum number of eigenvectors for ELPA usage                        64
+ GLOBAL| Orthonormality check for eigenvectors                          DISABLED
+ GLOBAL| Matrix multiplication library                                     COSMA
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Grid backend                                                       AUTO
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of distributed systems (nodes)                                 1
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| OpenMP stack size per thread (OMP_STACKSIZE)                    default
+ GLOBAL| CPU model name                Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz
+ GLOBAL| CPUID                                                              1002
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal             65444008      65444008      65444008      65444008
+ MEMORY| MemFree              61778036      61778036      61778036      61778036
+ MEMORY| Buffers                   192           192           192           192
+ MEMORY| Cached                2051800       2051800       2051800       2051800
+ MEMORY| Slab                   272872        272872        272872        272872
+ MEMORY| SReclaimable            80408         80408         80408         80408
+ MEMORY| MemLikelyFree        63910436      63910436      63910436      63910436
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+
+                  #####   #####        #          ####### ######   
+                 #     # #     #      #              #    #     #  
+                 #     # #           #    ##   ##    #    #     #  
+                 #     #  #####     #      ## ##     #    ######   
+                 #   # #       #   #        ###      #    #     #  
+                 #    #  #     #  #        ## ##     #    #     #  
+                  #### #  #####  #        ##   ##    #    ######   
+
+                                   GFN1-xTB 
+                                 Version 1.1                       
+                            J. Hutter and A. Hehn                  
+
+
+ EWALD| Summation is done by:                                               SPME
+ EWALD| Alpha parameter [       ANGSTROM^-1]                              0.3500
+ EWALD| Real Space Cutoff [          ANGSTROM]                            9.6398
+ EWALD| G-space max. Miller index                         27        27       125
+ EWALD| Spline interpolation order                                             6
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   2
+                             - Atoms:                                         65
+                             - Shell sets:                                   194
+                             - Shells:                                       194
+                             - Primitive Cartesian functions:               1164
+                             - Cartesian basis functions:                    644
+                             - Spherical basis functions:                    580
+
+  Maximum angular momentum of the orbital basis functions:                     2
+
+
+ SCF PARAMETERS         Density guess:                                    ATOMIC
+                        --------------------------------------------------------
+                        max_scf:                                              20
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       0.00E+00
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                             0.000000
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         1.00E-06
+                        max_scf                                               10
+                        No outer loop optimization
+                        step_size                                       5.00E-01
+
+ *******************************************************************************
+ **                  MAPPING OF BAND REPLICA TO REPLICA ENV                   **
+ *******************************************************************************
+ ** Replica Env Nr.:      1    working on the following BAND replicas         **
+ **                                                                           **
+ ** Band Replica   Nr.:      2 Output available on file: neb-BAND2.out        **
+ **                                                                           **
+ *******************************************************************************
+
+
+  **** **** ******  **  PROGRAM ENDED AT                 2026-10-27 17:29:18.705
+ ***** ** ***  *** **   PROGRAM RAN ON                              [redacted]
+ **    ****   ******    PROGRAM RAN BY                                      [redacted]
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2203946
+  **** **  *******  **  PROGRAM STOPPED IN <cluster-path>
+                                           e-cineb-20261027/jobs/cineb

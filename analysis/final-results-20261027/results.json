@@ -1,0 +1,161 @@
+{
+  "band_audit": "analysis/course-cineb-5763/audit.json",
+  "band_sha256": "c1263630eafc2c98e7af0a9565f6acb11881713a31a27acf431e252f192c6a60",
+  "electronic_energies_Eh": {
+    "hcp": -296.6631522669268,
+    "ts": -296.6515375475459,
+    "fcc": -296.6658372021572
+  },
+  "frequencies_cm-1": {
+    "hcp": [
+      306.80920295,
+      310.99058615,
+      370.27547094
+    ],
+    "fcc": [
+      322.55366675,
+      329.37006164,
+      379.40887145
+    ],
+    "ts": [
+      -187.28979603,
+      418.77332039,
+      444.90433684
+    ]
+  },
+  "thermochemistry": {
+    "reference": "hcp",
+    "electronic_relative_eV": {
+      "hcp": 0.0,
+      "ts": 0.31605261521169464,
+      "fcc": -0.07306080960079747
+    },
+    "local_harmonic_relative_eV": {
+      "hcp": 0.0,
+      "ts": 0.3193189236204774,
+      "fcc": -0.06899132954631984
+    },
+    "vibrations": {
+      "hcp": {
+        "temperature_K": 298.15,
+        "active_real_modes_cm-1": [
+          306.80920295,
+          310.99058615,
+          370.27547094
+        ],
+        "excluded_imaginary_modes_cm-1": [],
+        "ZPE_eV": 0.06125285955386752,
+        "thermal_excitation_eV": 0.03150324224373692,
+        "Fvib_eV": 0.04342952648376668,
+        "Svib_eV_K": 0.00016544214426911875,
+        "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+      },
+      "ts": {
+        "temperature_K": 298.15,
+        "active_real_modes_cm-1": [
+          418.77332039,
+          444.90433684
+        ],
+        "excluded_imaginary_modes_cm-1": [
+          -187.28979603
+        ],
+        "ZPE_eV": 0.0535411910181628,
+        "thermal_excitation_eV": 0.015230684238588253,
+        "Fvib_eV": 0.046695834892549457,
+        "Svib_eV_K": 7.404340219420289e-05,
+        "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+      },
+      "fcc": {
+        "temperature_K": 298.15,
+        "active_real_modes_cm-1": [
+          322.55366675,
+          329.37006164,
+          379.40887145
+        ],
+        "excluded_imaginary_modes_cm-1": [],
+        "ZPE_eV": 0.0639344728545953,
+        "thermal_excitation_eV": 0.03013244224746276,
+        "Fvib_eV": 0.047499006538244314,
+        "Svib_eV_K": 0.0001561895306517315,
+        "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+      }
+    },
+    "electronic_forward_barrier_eV": 0.31605261521169464,
+    "electronic_reverse_barrier_eV": 0.3891134248124921,
+    "local_harmonic_forward_barrier_eV": 0.3193189236204774,
+    "local_harmonic_reverse_barrier_eV": 0.38831025316679724,
+    "single_hop_quantum_hTST_rate_s-1": 24868810.06239656
+  },
+  "source_energy_policy": "All electronic relative energies use the final converged band evaluations; independent frequency baseline differences are recorded separately.",
+  "frequency_baseline_energy_offsets_eV": {
+    "hcp": -9.918609353571297e-07,
+    "fcc": -6.622620193967634e-06,
+    "ts": -9.536342298510049e-06
+  },
+  "stationary_structures": {
+    "hcp": {
+      "O_A": [
+        7.995058500000001,
+        3.085904070000001,
+        27.410673770000002
+      ],
+      "nearest_Cu_one_based": [
+        60,
+        57,
+        61
+      ],
+      "nearest_O_Cu_distances_A": [
+        1.8374557286864834,
+        1.8408368860681652,
+        1.8427697260746028
+      ],
+      "O_height_above_three_nearest_top_Cu_A": 1.0308905533333252,
+      "max_O_residual_force_Eh_bohr": 2.5128e-05
+    },
+    "ts": {
+      "O_A": [
+        7.363703301125139,
+        3.449283806090464,
+        27.546518692458488
+      ],
+      "nearest_Cu_one_based": [
+        60,
+        57,
+        61
+      ],
+      "nearest_O_Cu_distances_A": [
+        1.7603338639164363,
+        1.7616927835985177,
+        2.5395426473127625
+      ],
+      "O_height_above_three_nearest_top_Cu_A": 1.1667354757918105,
+      "max_O_residual_force_Eh_bohr": 5.3402e-05
+    },
+    "fcc": {
+      "O_A": [
+        6.683449010000002,
+        3.8445736500000014,
+        27.397844160000005
+      ],
+      "nearest_Cu_one_based": [
+        60,
+        57,
+        56
+      ],
+      "nearest_O_Cu_distances_A": [
+        1.8268287480054006,
+        1.8297372778326544,
+        1.8306960269950914
+      ],
+      "O_height_above_three_nearest_top_Cu_A": 1.014412236666658,
+      "max_O_residual_force_Eh_bohr": 1.3871e-05
+    }
+  },
+  "course_example_relative_eV": {
+    "hcp": 0,
+    "ts": 0.344224036011961,
+    "fcc": -0.07001489681049036
+  },
+  "course_comparison_scope": "CuO.pdf page26 tabulated energies and E/eV diagram; no vibrational corrections supplied there. Compared to electronic energy only.",
+  "animation_scope": "Migration uses linear interpolation between the five computed images, no extra electronic points. Imaginary-mode animation is a visualized eigenvector, not a real oscillation."
+}

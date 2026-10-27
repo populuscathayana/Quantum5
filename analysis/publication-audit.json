@@ -1,0 +1,35 @@
+{
+  "status": "publication_ready",
+  "created_utc": "2026-10-27T12:15:14.062181+00:00",
+  "repository": "https://github.com/populuscathayana/Quantum5",
+  "checks": {
+    "all_115_source_and_public_hashes": true,
+    "engine_output_only_approved_redactions": true,
+    "cover_and_first_eight_pages_unchanged": true,
+    "standalone_recompiled_all_ten_pages_pixel_identical": true,
+    "clickable_repo_link_only_on_body_page9": true,
+    "published_pdf_matches_reviewed_pdf": true,
+    "no_layout_or_reference_errors": true,
+    "portable_scientific_checks_48_pass": true,
+    "five_rebuilt_result_figures_pixel_identical": true,
+    "two_rebuilt_animations_byte_identical": true,
+    "no_excluded_files": true,
+    "no_private_path_connection_or_secret_markers": true,
+    "report_source_only_data_code_section_changed": true
+  },
+  "source_files": 115,
+  "files_reviewed": 126,
+  "pages": 10,
+  "visual_review": "PDF pages9–10 visually inspected after repository-link insertion; pages1–8 pixel-identical to already visually approved final report. All10 standalone-recompiled pages pixel-identical.",
+  "link_pdf_pages": [
+    9
+  ],
+  "cover_unchanged": true,
+  "pdf_sha256": "16d7e427688a5f3a6c37714d3c683b38d27737ed0911462fa17a8d9383aea945",
+  "TeX_sha256": "d45cf671c16d0f9df407037f215980e606c4d3c29d6fef9d394b1ad9828f1002",
+  "public_scientific_checks": 48,
+  "original_regression_tests": 47,
+  "rebuilt_figures": 5,
+  "rebuilt_animations": 2,
+  "quantum_calculations_added": 0
+}

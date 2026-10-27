@@ -1,0 +1,178 @@
+{
+  "site": "hcp",
+  "jobid": "5761",
+  "collection": "received/hcp-frequency-5761-20261027T082128Z",
+  "input_sha256": "e87efdc569cee1c83c7b215fb62bf4bf1cdeb9bdc6de48f4f82ca3cfb3815b37",
+  "output_sha256": "c90f408d11c8a54fd9646263c0b343f5285c4b21b0b8a6f069ab73363072b603",
+  "Hessian_sha256": "16501aa246a0705797daa2a26a7cdc411914acc088aed1e0b99c2e920472c89f",
+  "frequencies_cm-1": [
+    306.80920295,
+    310.99058615,
+    370.27547094
+  ],
+  "reconstructed_frequencies_cm-1": [
+    306.8092031462312,
+    310.99058634575357,
+    370.2754711705916
+  ],
+  "symmetrized_frequencies_cm-1": [
+    306.8165063678867,
+    310.9834578217771,
+    370.2754067757131
+  ],
+  "other_triangle_frequencies_cm-1": [
+    306.8220231967843,
+    310.976282871284,
+    370.27686135444037
+  ],
+  "Hessian_cartesian_Eh_bohr2": [
+    [
+      0.05702855522322582,
+      -0.00010583698436583194,
+      0.0008844505729695253
+    ],
+    [
+      -0.000134838235440837,
+      0.05857876563615877,
+      -0.0007684491608225455
+    ],
+    [
+      0.0007520071994254935,
+      -0.0008989391426108503,
+      0.08295829314492809
+    ]
+  ],
+  "force_reconstructed_Hessian": [
+    [
+      0.05702855,
+      -0.00010585000000000001,
+      0.00088445
+    ],
+    [
+      -0.00013485,
+      0.05857875,
+      -0.0007684499999999998
+    ],
+    [
+      0.00075205,
+      -0.0008989499999999999,
+      0.08295825
+    ]
+  ],
+  "max_Hessian_antisymmetry_Eh_bohr2": 0.00013244337354403174,
+  "max_triangle_frequency_spread_cm-1": 0.014303474469556932,
+  "normal_modes_O": [
+    [
+      -0.998174,
+      -0.050917,
+      0.032495
+    ],
+    [
+      -0.049836,
+      0.998204,
+      0.033244
+    ],
+    [
+      0.03413,
+      -0.031564,
+      0.998919
+    ]
+  ],
+  "base_energy_Eh": -296.663152303377,
+  "optimization_energy_Eh": -296.66315191795866,
+  "energy_difference_from_optimization_Eh": -3.854183319162985e-07,
+  "base_O_force_Eh_bohr": [
+    -2.5128e-05,
+    8.795e-06,
+    -1.3411e-05
+  ],
+  "max_base_force_Eh_bohr": 2.5128e-05,
+  "SCF_replica_records": [
+    {
+      "file": "frequency-r-0.out",
+      "sha256": "a3d6dd8cd748449c1f67d0fde59596ac5c2f0d787443bf1508063744646b884d",
+      "force_evaluations": 3,
+      "all_converged": true,
+      "max_converged_residual": 9.1e-07,
+      "electron_counts": [
+        710
+      ]
+    },
+    {
+      "file": "frequency-r-1.out",
+      "sha256": "7a6df5ef28b4dbc3e20610a8f50dbe41d10dbd23702b635fb00432c6ba237848",
+      "force_evaluations": 3,
+      "all_converged": true,
+      "max_converged_residual": 1e-06,
+      "electron_counts": [
+        710
+      ]
+    },
+    {
+      "file": "frequency-r-2.out",
+      "sha256": "cb086f170c563c7de642cdbab60081e68c9bb1d380bf250d472d1492c4eb733b",
+      "force_evaluations": 3,
+      "all_converged": true,
+      "max_converged_residual": 9.9e-07,
+      "electron_counts": [
+        710
+      ]
+    },
+    {
+      "file": "frequency-r-3.out",
+      "sha256": "f5f3b5d0f3c00338c0c444edb509da05cf08361dd747618aa399f05ff95ea7b5",
+      "force_evaluations": 3,
+      "all_converged": true,
+      "max_converged_residual": 1e-06,
+      "electron_counts": [
+        710
+      ]
+    },
+    {
+      "file": "frequency-r-4.out",
+      "sha256": "80a4ad98025389b0c2e71ea31ce46cc269bc299feccbffe52bb92295d085a81a",
+      "force_evaluations": 3,
+      "all_converged": true,
+      "max_converged_residual": 1e-06,
+      "electron_counts": [
+        710
+      ]
+    }
+  ],
+  "local_vibrational_thermochemistry": {
+    "temperature_K": 298.15,
+    "active_real_modes_cm-1": [
+      306.80920295,
+      310.99058615,
+      370.27547094
+    ],
+    "excluded_imaginary_modes_cm-1": [],
+    "ZPE_eV": 0.06125285955386752,
+    "thermal_excitation_eV": 0.03150324224373692,
+    "Fvib_eV": 0.04342952648376668,
+    "Svib_eV_K": 0.00016544214426911875,
+    "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+  },
+  "checks": {
+    "scheduler_completed_exact_directory": true,
+    "submission_identity": true,
+    "manifest_verified": true,
+    "source_geometry_and_audit_verified": true,
+    "exact_course_template": true,
+    "normal_end_and_zero_exit": true,
+    "source_coordinates_and_cell": true,
+    "composition_Cu64O": true,
+    "five_replica_outputs_all_SCF_pass": true,
+    "displacement_energies_match_replica_evaluations": true,
+    "molden_geometry_agrees_at_print_precision": true,
+    "three_modes_only_O_moves": true,
+    "molden_frequencies_match": true,
+    "force_difference_reproduces_Hessian": true,
+    "Hessian_reproduces_frequencies": true,
+    "modes_satisfy_Hessian": true,
+    "positive_curvature_robust_to_triangle_symmetrization": true,
+    "small_residual_O_force": true
+  },
+  "accepted_minimum": true,
+  "numerical_scope": "Course EPS_SCF1e-6, DX0.01bohr. Both Hessian triangles and their mean have positive curvature. This is a local minimum verification, not a separate SCF/displacement convergence study."
+}

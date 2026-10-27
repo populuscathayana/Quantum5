@@ -1,0 +1,60 @@
+{
+  "collection": "received/fcc-opt-5760-20261027T081441Z",
+  "site": "fcc",
+  "jobid": "5760",
+  "input_sha256": "a5f0fae08e885d6811ad973f5ec179535164e65bde7f44ec6cfabc9b936e152e",
+  "output_sha256": "7afd368f57558cb21490ec45271da50d77452dbd36e8ef06af3927dca456d08d",
+  "restart_sha256": "d90d42e914b16d9ee5652abb51544f284304f7ac630751875e53c89d5e1fa136",
+  "energy_Eh": -296.6658367024514,
+  "geometry_steps": 7,
+  "last_criteria": {
+    "Maximum step size": "YES",
+    "RMS step size": "YES",
+    "Maximum gradient": "YES",
+    "RMS gradient": "YES"
+  },
+  "last_geometry_values_atomic_units": {
+    "Maximum step size": 0.0018056237,
+    "RMS step size": 0.0001489952,
+    "Maximum gradient": 3.82886e-05,
+    "RMS gradient": 2.7895e-06
+  },
+  "SCF_force_evaluations": 9,
+  "max_converged_outer_SCF_residual": 9.6e-07,
+  "max_fixed_Cu_displacement_A": 4.070144838902081e-15,
+  "O_position_A": [
+    6.683449007976025,
+    3.844573653546621,
+    27.39784415769091
+  ],
+  "hollow_barycentric_coordinates": [
+    0.3301881505546358,
+    0.33266276036165227,
+    0.33714908908371205
+  ],
+  "O_height_above_triangle_plane_A": 1.014428504918694,
+  "checks": {
+    "scheduler_completed_exact_directory": true,
+    "submission_identity": true,
+    "source_files_match_manifest": true,
+    "exact_course_input_except_filled_fields": true,
+    "accepted_slab_source_unchanged": true,
+    "engine_exit_zero": true,
+    "normal_program_end": true,
+    "geometry_completed": true,
+    "four_criteria_yes": true,
+    "all_outer_scf_converged": true,
+    "outer_residuals_within_course_threshold": true,
+    "composition_Cu64O": true,
+    "electron_count_710": true,
+    "fixed_64_Cu_unchanged": true,
+    "cell_unchanged": true,
+    "restart_xyz_match": true,
+    "pdb_final_match_at_print_precision": true,
+    "O_inside_original_hollow_triangle": true,
+    "O_above_surface": true
+  },
+  "accepted_optimization": true,
+  "minimum_confirmed_by_frequency": false,
+  "next": "Independent three-active-coordinate vibrational analysis."
+}

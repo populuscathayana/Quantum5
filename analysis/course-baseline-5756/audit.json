@@ -1,0 +1,59 @@
+{
+  "collection": "received/slab-opt-template-5756-20261027T080358Z",
+  "package": "Gau5-course-baseline-20261027",
+  "jobid": "5756",
+  "input_sha256": "57b4a74cff6c7e14a41557db291f791ac687599025d77c28bd6d8ce06054951e",
+  "output_sha256": "8184824f37e56e8e2e63fa0ee2df0229fbb0d30675c328fd083cb21008925903",
+  "restart_sha256": "b87b7bde165effc437b44512ceeec0d49e64fb6d00841bb14ab4f668255bd193",
+  "final_xyz_sha256": "714754e470cb8e2717d3a6b555c67d70f8227a64811c93a7918ade46902e2daa",
+  "energy_Eh": -291.992409929775,
+  "geometry_steps": 6,
+  "last_criteria": {
+    "Maximum step size": "YES",
+    "RMS step size": "YES",
+    "Maximum gradient": "YES",
+    "RMS gradient": "YES"
+  },
+  "last_geometry_values_atomic_units": {
+    "Maximum step size": 0.0023940945,
+    "RMS step size": 0.0012991308,
+    "Maximum gradient": 2.91188e-05,
+    "RMS gradient": 1.16892e-05
+  },
+  "converged_outer_SCF_count": 8,
+  "converged_outer_SCF_max_residual": 9.9e-07,
+  "trajectory_frames": 7,
+  "PDB_coordinate_precision_A": 0.001,
+  "KEEP_SPACE_GROUP": "T",
+  "max_fixed_displacement_A": 0.09698081555281139,
+  "max_fixed_pair_distance_change_A": 0.039950536185278995,
+  "layer_mean_dz_A": [
+    0.09697930764418605,
+    0.047865537848787554,
+    -0.04786502170065221,
+    -0.09697990789333355
+  ],
+  "max_all_displacement_A": 0.09698081555281139,
+  "max_cell_difference_A": 4.1655567883935873e-13,
+  "checks": {
+    "scheduler_completed_exact_directory": true,
+    "jobid_and_submission_receipt_match": true,
+    "source_files_match_manifest": true,
+    "exact_expected_template_input": true,
+    "engine_exit_zero": true,
+    "normal_program_end": true,
+    "geometry_completed": true,
+    "four_geometry_criteria_yes": true,
+    "all_outer_scf_converged": true,
+    "outer_residuals_within_course_threshold": true,
+    "composition_64Cu": true,
+    "electron_count_704": true,
+    "cell_unchanged": true,
+    "final_xyz_restart_agreement": true,
+    "pdb_final_agreement_with_print_precision": true,
+    "fixed_atoms_unchanged": false
+  },
+  "numerically_converged": true,
+  "accepted_fixed_layer_surface": false,
+  "force_note": "Values are CP2K optimizer gradients, after its constraint/symmetry processing; no independently printed force array in unchanged course template."
+}

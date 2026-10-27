@@ -1,0 +1,214 @@
+{
+  "accepted": true,
+  "checks": {
+    "public_file_hashes": true,
+    "band_normal_end": true,
+    "all_band_SCFs_converged": true,
+    "band_shape": true,
+    "band_fixed_Cu": true,
+    "band_endpoint_geometries": true,
+    "band_final_export": true,
+    "band_peak_interior": true,
+    "band_RMS DISPLACEMENT": true,
+    "band_MAX DISPLACEMENT": true,
+    "band_RMS FORCE": true,
+    "band_MAX FORCE": true,
+    "hcp_normal_end": true,
+    "hcp_SCFs": true,
+    "hcp_composition": true,
+    "hcp_source_coordinates": true,
+    "hcp_Hessian_from_force_differences": true,
+    "hcp_Hessian_frequencies": true,
+    "hcp_curvature": true,
+    "hcp_mode_source_geometry": true,
+    "hcp_three_O_modes_only": true,
+    "hcp_small_residual_force": true,
+    "ts_normal_end": true,
+    "ts_SCFs": true,
+    "ts_composition": true,
+    "ts_source_coordinates": true,
+    "ts_Hessian_from_force_differences": true,
+    "ts_Hessian_frequencies": true,
+    "ts_curvature": true,
+    "ts_mode_source_geometry": true,
+    "ts_three_O_modes_only": true,
+    "ts_small_residual_force": true,
+    "unstable_mode_along_path": true,
+    "fcc_normal_end": true,
+    "fcc_SCFs": true,
+    "fcc_composition": true,
+    "fcc_source_coordinates": true,
+    "fcc_Hessian_from_force_differences": true,
+    "fcc_Hessian_frequencies": true,
+    "fcc_curvature": true,
+    "fcc_mode_source_geometry": true,
+    "fcc_three_O_modes_only": true,
+    "fcc_small_residual_force": true,
+    "surface_constraint_result": true,
+    "symmetry-baseline_constraint_result": true,
+    "historical_failure_not_misrepresented": true,
+    "same_electronic_reference": true,
+    "same_local_free_energy": true
+  },
+  "manifest_files": 115,
+  "energies_Eh": [
+    -296.6631522669268,
+    -296.6563644766726,
+    -296.6515375475459,
+    -296.65736139317136,
+    -296.6658372021572
+  ],
+  "frequencies": {
+    "hcp": {
+      "frequencies_cm-1": [
+        306.80920295,
+        310.99058615,
+        370.27547094
+      ],
+      "force_Eh_bohr": [
+        -2.5128e-05,
+        8.795e-06,
+        -1.3411e-05
+      ],
+      "normal_modes_O": [
+        [
+          -0.998174,
+          -0.050917,
+          0.032495
+        ],
+        [
+          -0.049836,
+          0.998204,
+          0.033244
+        ],
+        [
+          0.03413,
+          -0.031564,
+          0.998919
+        ]
+      ]
+    },
+    "ts": {
+      "frequencies_cm-1": [
+        -187.28979603,
+        418.77332039,
+        444.90433684
+      ],
+      "force_Eh_bohr": [
+        5.3402e-05,
+        -4.2835e-05,
+        -2.946e-06
+      ],
+      "normal_modes_O": [
+        [
+          0.865212,
+          -0.50134,
+          -0.008142
+        ],
+        [
+          0.501373,
+          0.864858,
+          0.025411
+        ],
+        [
+          0.005698,
+          0.026068,
+          -0.999644
+        ]
+      ]
+    },
+    "fcc": {
+      "frequencies_cm-1": [
+        322.55366675,
+        329.37006164,
+        379.40887145
+      ],
+      "force_Eh_bohr": [
+        1.3871e-05,
+        -2.73e-06,
+        3.16e-06
+      ],
+      "normal_modes_O": [
+        [
+          -0.436602,
+          0.899415,
+          -0.020782
+        ],
+        [
+          0.89923,
+          0.436989,
+          0.020621
+        ],
+        [
+          -0.027629,
+          0.009685,
+          0.999571
+        ]
+      ]
+    }
+  },
+  "thermochemistry": {
+    "reference": "hcp",
+    "electronic_relative_eV": {
+      "hcp": 0.0,
+      "ts": 0.31605261521169464,
+      "fcc": -0.07306080960079747
+    },
+    "local_harmonic_relative_eV": {
+      "hcp": 0.0,
+      "ts": 0.3193189236204774,
+      "fcc": -0.06899132954631984
+    },
+    "vibrations": {
+      "hcp": {
+        "temperature_K": 298.15,
+        "active_real_modes_cm-1": [
+          306.80920295,
+          310.99058615,
+          370.27547094
+        ],
+        "excluded_imaginary_modes_cm-1": [],
+        "ZPE_eV": 0.06125285955386752,
+        "thermal_excitation_eV": 0.03150324224373692,
+        "Fvib_eV": 0.04342952648376668,
+        "Svib_eV_K": 0.00016544214426911875,
+        "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+      },
+      "ts": {
+        "temperature_K": 298.15,
+        "active_real_modes_cm-1": [
+          418.77332039,
+          444.90433684
+        ],
+        "excluded_imaginary_modes_cm-1": [
+          -187.28979603
+        ],
+        "ZPE_eV": 0.0535411910181628,
+        "thermal_excitation_eV": 0.015230684238588253,
+        "Fvib_eV": 0.046695834892549457,
+        "Svib_eV_K": 7.404340219420289e-05,
+        "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+      },
+      "fcc": {
+        "temperature_K": 298.15,
+        "active_real_modes_cm-1": [
+          322.55366675,
+          329.37006164,
+          379.40887145
+        ],
+        "excluded_imaginary_modes_cm-1": [],
+        "ZPE_eV": 0.0639344728545953,
+        "thermal_excitation_eV": 0.03013244224746276,
+        "Fvib_eV": 0.047499006538244314,
+        "Svib_eV_K": 0.0001561895306517315,
+        "definition": "Local adsorbate harmonic free energy at fixed Cu coordinates and fixed cell; no gas translation/rotation or Cu phonon contribution."
+      }
+    },
+    "electronic_forward_barrier_eV": 0.31605261521169464,
+    "electronic_reverse_barrier_eV": 0.3891134248124921,
+    "local_harmonic_forward_barrier_eV": 0.3193189236204774,
+    "local_harmonic_reverse_barrier_eV": 0.38831025316679724,
+    "single_hop_quantum_hTST_rate_s-1": 24868810.06239656
+  },
+  "scope": "Offline scientific checks of public files; original private scheduler/provenance checks are retained as historical audits, not rerun here."
+}

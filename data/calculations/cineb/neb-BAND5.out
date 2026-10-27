@@ -1,0 +1,2152 @@
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    0                                                    **
+ *******************************************************************************
+
+ Extrapolation method: initial_guess
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.6     0.00634351      -296.3437285846 -2.96E+02
+     2 OT DIIS     0.80E-01    0.3     0.01571522      -296.3114085947  3.23E-02
+     3 OT DIIS     0.80E-01    0.3     0.00754344      -296.5706603396 -2.59E-01
+     4 OT DIIS     0.80E-01    0.3     0.00118307      -296.6545626592 -8.39E-02
+     5 OT DIIS     0.80E-01    0.3     0.00040865      -296.6614800882 -6.92E-03
+     6 OT DIIS     0.80E-01    0.3     0.00032883      -296.6628578072 -1.38E-03
+     7 OT DIIS     0.80E-01    0.3     0.00020010      -296.6642566894 -1.40E-03
+     8 OT DIIS     0.80E-01    0.3     0.00011133      -296.6651416769 -8.85E-04
+     9 OT DIIS     0.80E-01    0.3     0.00006860      -296.6655358931 -3.94E-04
+    10 OT DIIS     0.80E-01    0.3     0.00004286      -296.6657066929 -1.71E-04
+    11 OT DIIS     0.80E-01    0.3     0.00006570      -296.6657636118 -5.69E-05
+    12 OT DIIS     0.80E-01    0.3     0.00004079      -296.6657761750 -1.26E-05
+    13 OT DIIS     0.80E-01    0.3     0.00001968      -296.6658046405 -2.85E-05
+    14 OT DIIS     0.80E-01    0.3     0.00001613      -296.6658134981 -8.86E-06
+    15 OT DIIS     0.80E-01    0.3     0.00001148      -296.6658213588 -7.86E-06
+    16 OT DIIS     0.80E-01    0.3     0.00000886      -296.6658259606 -4.60E-06
+    17 OT DIIS     0.80E-01    0.3     0.00000675      -296.6658288025 -2.84E-06
+    18 OT DIIS     0.80E-01    0.3     0.00000528      -296.6658305513 -1.75E-06
+    19 OT DIIS     0.80E-01    0.3     0.00000566      -296.6658315561 -1.00E-06
+    20 OT DIIS     0.80E-01    0.3     0.00000619      -296.6658317299 -1.74E-07
+
+  Leaving inner SCF loop after reaching    20 steps.
+
+
+  Core Hamiltonian energy:                                   -296.21207585633329
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00066943632308
+  DFTB3 3rd order energy:                                       0.00060251392567
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583172992887
+
+  outer SCF iter =    1 RMS gradient =   0.62E-05 energy =       -296.6658317299
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.9     0.00000411      -296.6658324693 -7.39E-07
+     2 OT DIIS     0.80E-01    0.2     0.00000384      -296.6658327281 -2.59E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000454      -296.6658329269 -1.99E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000449      -296.6658331423 -2.15E-07
+     5 OT DIIS     0.80E-01    0.2     0.00000297      -296.6658338098 -6.68E-07
+     6 OT DIIS     0.80E-01    0.3     0.00000277      -296.6658340875 -2.78E-07
+     7 OT DIIS     0.80E-01    0.3     0.00000218      -296.6658350548 -9.67E-07
+     8 OT DIIS     0.80E-01    0.3     0.00000197      -296.6658354617 -4.07E-07
+     9 OT DIIS     0.80E-01    0.2     0.00000181      -296.6658357278 -2.66E-07
+    10 OT DIIS     0.80E-01    0.2     0.00000155      -296.6658361673 -4.40E-07
+    11 OT DIIS     0.80E-01    0.2     0.00000163      -296.6658363402 -1.73E-07
+    12 OT DIIS     0.80E-01    0.2     0.00000203      -296.6658364322 -9.20E-08
+    13 OT DIIS     0.80E-01    0.2     0.00000138      -296.6658365288 -9.66E-08
+    14 OT DIIS     0.80E-01    0.2     0.00000121      -296.6658366946 -1.66E-07
+    15 OT DIIS     0.80E-01    0.2     0.00000106      -296.6658368445 -1.50E-07
+    16 OT DIIS     0.80E-01    0.2     0.00000098      -296.6658369368 -9.23E-08
+
+  *** SCF run converged in    16 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206634202423
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065407233168
+  DFTB3 3rd order energy:                                       0.00060315670958
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583693682736
+
+  outer SCF iter =    2 RMS gradient =   0.98E-06 energy =       -296.6658369368
+  outer SCF loop converged in   2 iterations or   36 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837003429147
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000092      -296.6658370034 -2.97E+02
+
+  *** SCF run converged in     1 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206583769873
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065348466379
+  DFTB3 3rd order energy:                                       0.00060317345024
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583700342909
+
+  outer SCF iter =    1 RMS gradient =   0.92E-06 energy =       -296.6658370034
+  outer SCF loop converged in   1 iterations or    1 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837017076001
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000090      -296.6658370301 -2.97E+02
+
+  *** SCF run converged in     1 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206611010052
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065376384360
+  DFTB3 3rd order energy:                                       0.00060313999454
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583703010673
+
+  outer SCF iter =    1 RMS gradient =   0.90E-06 energy =       -296.6658370301
+  outer SCF loop converged in   1 iterations or    1 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837042660200
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000101      -296.6658370718 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000180      -296.6658370805 -8.74E-09
+     3 OT DIIS     0.80E-01    0.2     0.00000114      -296.6658370857 -5.20E-09
+     4 OT DIIS     0.80E-01    0.2     0.00000080      -296.6658370926 -6.88E-09
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206439487020
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065197587316
+  DFTB3 3rd order energy:                                       0.00060315022121
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583709262022
+
+  outer SCF iter =    1 RMS gradient =   0.80E-06 energy =       -296.6658370926
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837112397298
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000097      -296.6658372031 -2.97E+02
+
+  *** SCF run converged in     1 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21207524017115
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00066272074780
+  DFTB3 3rd order energy:                                       0.00060314020849
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583720305920
+
+  outer SCF iter =    1 RMS gradient =   0.97E-06 energy =       -296.6658372031
+  outer SCF loop converged in   1 iterations or    1 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837207551249
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000576      -296.6658372563 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00002808      -296.6658362912  9.65E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000267      -296.6658373030 -1.01E-06
+     4 OT DIIS     0.80E-01    0.2     0.00000061      -296.6658373238 -2.08E-08
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206279999222
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065016490709
+  DFTB3 3rd order energy:                                       0.00060313512016
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583732380934
+
+  outer SCF iter =    1 RMS gradient =   0.61E-06 energy =       -296.6658373238
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837327454028
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000624      -296.6658373660 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00003108      -296.6658361787  1.19E-06
+     3 OT DIIS     0.80E-01    0.2     0.00000260      -296.6658374174 -1.24E-06
+     4 OT DIIS     0.80E-01    0.2     0.00000048      -296.6658374372 -1.98E-08
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206462763672
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065188222981
+  DFTB3 3rd order energy:                                       0.00060313209281
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583743715847
+
+  outer SCF iter =    1 RMS gradient =   0.48E-06 energy =       -296.6658374372
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837439334894
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    2                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000347      -296.6658375034 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001735      -296.6658371336  3.70E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000140      -296.6658375197 -3.86E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000031      -296.6658375257 -5.93E-09
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206283175394
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065003192634
+  DFTB3 3rd order energy:                                       0.00060309799482
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583752567715
+
+  outer SCF iter =    1 RMS gradient =   0.31E-06 energy =       -296.6658375257
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837526713631
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    2                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000105      -296.6658375663 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000512      -296.6658375349  3.14E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000049      -296.6658375686 -3.37E-08
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205684131223
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064404080051
+  DFTB3 3rd order energy:                                       0.00060305576255
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583756859353
+
+  outer SCF iter =    1 RMS gradient =   0.49E-06 energy =       -296.6658375686
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837569472671
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    2                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000036      -296.6658375563 -2.97E+02
+
+  *** SCF run converged in     1 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206273012638
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064994796467
+  DFTB3 3rd order energy:                                       0.00060304973191
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583755627414
+
+  outer SCF iter =    1 RMS gradient =   0.36E-06 energy =       -296.6658375563
+  outer SCF loop converged in   1 iterations or    1 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837557488942
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    2                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000209      -296.6658374854 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001102      -296.6658373398  1.46E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000050      -296.6658374950 -1.55E-07
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206114982397
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064844116260
+  DFTB3 3rd order energy:                                       0.00060303749624
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583749500950
+
+  outer SCF iter =    1 RMS gradient =   0.50E-06 energy =       -296.6658374950
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837497076495
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    2                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000239      -296.6658373851 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001262      -296.6658371953  1.90E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000059      -296.6658373986 -2.03E-07
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206042282807
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064782369437
+  DFTB3 3rd order energy:                                       0.00060302435974
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583739861835
+
+  outer SCF iter =    1 RMS gradient =   0.59E-06 energy =       -296.6658373986
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837402160207
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    3                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000148      -296.6658372776 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000715      -296.6658372229  5.47E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000069      -296.6658372888 -6.58E-08
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206221368419
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064967974820
+  DFTB3 3rd order energy:                                       0.00060306901749
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583728876287
+
+  outer SCF iter =    1 RMS gradient =   0.69E-06 energy =       -296.6658372888
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837293823643
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    3                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000088      -296.6658371758 -2.97E+02
+
+  *** SCF run converged in     1 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205698686595
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064453752630
+  DFTB3 3rd order energy:                                       0.00060309735595
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583717582807
+
+  outer SCF iter =    1 RMS gradient =   0.88E-06 energy =       -296.6658371758
+  outer SCF loop converged in   1 iterations or    1 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837179909715
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    3                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000667      -296.6658370201 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00003609      -296.6658354290  1.59E-06
+     3 OT DIIS     0.80E-01    0.2     0.00000090      -296.6658370901 -1.66E-06
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205171614918
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00063935367221
+  DFTB3 3rd order energy:                                       0.00060309627050
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583709005084
+
+  outer SCF iter =    1 RMS gradient =   0.90E-06 energy =       -296.6658370901
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837096300436
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    3                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000755      -296.6658369501 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00004092      -296.6658349018  2.05E-06
+     3 OT DIIS     0.80E-01    0.2     0.00000091      -296.6658370371 -2.14E-06
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206157790721
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064921974538
+  DFTB3 3rd order energy:                                       0.00060314494699
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583703705925
+
+  outer SCF iter =    1 RMS gradient =   0.91E-06 energy =       -296.6658370371
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837044943260
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    3                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000431      -296.6658369987 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00002304      -296.6658363584  6.40E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000088      -296.6658370360 -6.78E-07
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206078200072
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064842093417
+  DFTB3 3rd order energy:                                       0.00060314888171
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583703602919
+
+  outer SCF iter =    1 RMS gradient =   0.88E-06 energy =       -296.6658370360
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837043026784
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    4                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000150      -296.6658370667 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000691      -296.6658370198  4.69E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000081      -296.6658370815 -6.16E-08
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205741151221
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064499468069
+  DFTB3 3rd order energy:                                       0.00060315922283
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583708145311
+
+  outer SCF iter =    1 RMS gradient =   0.81E-06 energy =       -296.6658370815
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837092863569
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    4                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000084      -296.6658371631 -2.97E+02
+
+  *** SCF run converged in     1 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206708700305
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065455720637
+  DFTB3 3rd order energy:                                       0.00060319053231
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583716310873
+
+  outer SCF iter =    1 RMS gradient =   0.84E-06 energy =       -296.6658371631
+  outer SCF loop converged in   1 iterations or    1 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837170185966
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    4                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000356      -296.6658372238 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001582      -296.6658369196  3.04E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000247      -296.6658372432 -3.24E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000063      -296.6658372592 -1.59E-08
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206057239232
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064793267960
+  DFTB3 3rd order energy:                                       0.00060320436917
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583725918792
+
+  outer SCF iter =    1 RMS gradient =   0.63E-06 energy =       -296.6658372592
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837317493981
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    4                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000389      -296.6658374108 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001792      -296.6658370179  3.93E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000240      -296.6658374319 -4.14E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000051      -296.6658374471 -1.52E-08
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206071487114
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064784964024
+  DFTB3 3rd order energy:                                       0.00060324197989
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583744709538
+
+  outer SCF iter =    1 RMS gradient =   0.51E-06 energy =       -296.6658374471
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837456628765
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    4                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000222      -296.6658374813 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001009      -296.6658373605  1.21E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000139      -296.6658374919 -1.31E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000050      -296.6658374978 -5.88E-09
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206034562056
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064737323030
+  DFTB3 3rd order energy:                                       0.00060329846163
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583749777300
+
+  outer SCF iter =    1 RMS gradient =   0.50E-06 energy =       -296.6658374978
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837523951780
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    5                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000109      -296.6658374281 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000306      -296.6658374288 -6.88E-10
+     3 OT DIIS     0.80E-01    0.2     0.00000094      -296.6658374417 -1.29E-08
+
+  *** SCF run converged in     3 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205852282714
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064574209975
+  DFTB3 3rd order energy:                                       0.00060316283048
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583744174125
+
+  outer SCF iter =    1 RMS gradient =   0.94E-06 energy =       -296.6658374417
+  outer SCF loop converged in   1 iterations or    3 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837447724130
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    5                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000152      -296.6658371704 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000191      -296.6658372010 -3.06E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000169      -296.6658372105 -9.47E-09
+     4 OT DIIS     0.80E-01    0.2     0.00000130      -296.6658372338 -2.33E-08
+     5 OT DIIS     0.80E-01    0.2     0.00000062      -296.6658373563 -1.23E-07
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206027095121
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064758309427
+  DFTB3 3rd order energy:                                       0.00060315538765
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583735631366
+
+  outer SCF iter =    1 RMS gradient =   0.62E-06 energy =       -296.6658373563
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837363687785
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    5                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000213      -296.6658369998 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000221      -296.6658370635 -6.37E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000261      -296.6658370851 -2.16E-08
+     4 OT DIIS     0.80E-01    0.2     0.00000196      -296.6658371322 -4.71E-08
+     5 OT DIIS     0.80E-01    0.2     0.00000073      -296.6658373074 -1.75E-07
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206447279314
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065177994557
+  DFTB3 3rd order energy:                                       0.00060320933553
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583730735647
+
+  outer SCF iter =    1 RMS gradient =   0.73E-06 energy =       -296.6658373074
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837316527643
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    5                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000168      -296.6658372130 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000155      -296.6658372526 -3.96E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000241      -296.6658372673 -1.47E-08
+     4 OT DIIS     0.80E-01    0.2     0.00000150      -296.6658372966 -2.92E-08
+     5 OT DIIS     0.80E-01    0.2     0.00000073      -296.6658373478 -5.13E-08
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205426722804
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064165796750
+  DFTB3 3rd order energy:                                       0.00060308527279
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583734783217
+
+  outer SCF iter =    1 RMS gradient =   0.73E-06 energy =       -296.6658373478
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837356339068
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    5                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000166      -296.6658373045 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000132      -296.6658373417 -3.72E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000159      -296.6658373628 -2.11E-08
+     4 OT DIIS     0.80E-01    0.2     0.00000232      -296.6658373755 -1.27E-08
+     5 OT DIIS     0.80E-01    0.2     0.00000064      -296.6658374037 -2.82E-08
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205881102236
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064625779244
+  DFTB3 3rd order energy:                                       0.00060297336492
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583740370942
+
+  outer SCF iter =    1 RMS gradient =   0.64E-06 energy =       -296.6658374037
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837409138703
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    5                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000150      -296.6658373364 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000115      -296.6658373652 -2.87E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000142      -296.6658373792 -1.40E-08
+     4 OT DIIS     0.80E-01    0.2     0.00000192      -296.6658373865 -7.37E-09
+     5 OT DIIS     0.80E-01    0.2     0.00000057      -296.6658374057 -1.92E-08
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205909123472
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064661874504
+  DFTB3 3rd order energy:                                       0.00060289059145
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583740574259
+
+  outer SCF iter =    1 RMS gradient =   0.57E-06 energy =       -296.6658374057
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837410764937
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    6                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000131      -296.6658372808 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000107      -296.6658373032 -2.24E-08
+     3 OT DIIS     0.80E-01    0.2     0.00000143      -296.6658373139 -1.06E-08
+     4 OT DIIS     0.80E-01    0.2     0.00000142      -296.6658373218 -7.93E-09
+     5 OT DIIS     0.80E-01    0.2     0.00000067      -296.6658373411 -1.93E-08
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205850192496
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064602001014
+  DFTB3 3rd order energy:                                       0.00060296468509
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583734107411
+
+  outer SCF iter =    1 RMS gradient =   0.67E-06 energy =       -296.6658373411
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837348199773
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    6                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000117      -296.6658372062 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00000100      -296.6658372244 -1.82E-08
+
+  *** SCF run converged in     2 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206488044726
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065239065944
+  DFTB3 3rd order energy:                                       0.00060308925820
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583722437400
+
+  outer SCF iter =    1 RMS gradient =   0.10E-05 energy =       -296.6658372244
+  outer SCF loop converged in   1 iterations or    2 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837232729984
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    6                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000383      -296.6658370351 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001999      -296.6658365644  4.71E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000104      -296.6658370752 -5.11E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000099      -296.6658371009 -2.57E-08
+
+  *** SCF run converged in     4 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21205540009714
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00064307260094
+  DFTB3 3rd order energy:                                       0.00060305040867
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583710093187
+
+  outer SCF iter =    1 RMS gradient =   0.99E-06 energy =       -296.6658371009
+  outer SCF loop converged in   1 iterations or    4 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837143942099
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    6                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000448      -296.6658370238 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00002297      -296.6658364060  6.18E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000117      -296.6658370801 -6.74E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000108      -296.6658370964 -1.63E-08
+     5 OT DIIS     0.80E-01    0.2     0.00000081      -296.6658371229 -2.65E-08
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206419507917
+  Repulsive potential energy:                                   0.09225032864081
+  Electronic energy:                                            0.00065184612551
+  DFTB3 3rd order energy:                                       0.00060304991124
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583712288678
+
+  outer SCF iter =    1 RMS gradient =   0.81E-06 energy =       -296.6658371229
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837135692414
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    4              Replica Band Nr. :    5               **
+ ** Band  Step  Nr. :    7                                                    **
+ *******************************************************************************
+
+ Extrapolation method: ASPC
+
+ Number of electrons:                                                        710
+ Number of occupied orbitals:                                                355
+ Number of molecular orbitals:                                               355
+
+ Number of orbital functions:                                                580
+ Number of independent orbital functions:                                    580
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_SINGLE_INVERSE : inversion of 
+                                         H + eS - 2*(Sc)(c^T*H*c+const)(Sc)^T
+  Precond_solver : DEFAULT
+  stepsize       :    0.08000000                  energy_gap     :    0.08000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.80E-01    0.4     0.00000277      -296.6658371169 -2.97E+02
+     2 OT DIIS     0.80E-01    0.2     0.00001299      -296.6658369366  1.80E-07
+     3 OT DIIS     0.80E-01    0.2     0.00000112      -296.6658371531 -2.17E-07
+     4 OT DIIS     0.80E-01    0.2     0.00000100      -296.6658371675 -1.43E-08
+     5 OT DIIS     0.80E-01    0.2     0.00000078      -296.6658371919 -2.44E-08
+
+  *** SCF run converged in     5 steps ***
+
+
+  Core Hamiltonian energy:                                   -296.21206597338545
+  Repulsive potential energy:                                   0.09225032864082
+  Electronic energy:                                            0.00065352681846
+  DFTB3 3rd order energy:                                       0.00060307851284
+  Dispersion energy:                                           -0.54727815248522
+  Correction for halogen bonding:                               0.00000000000000
+
+  Total energy:                                              -296.66583719189856
+
+  outer SCF iter =    1 RMS gradient =   0.78E-06 energy =       -296.6658371919
+  outer SCF loop converged in   1 iterations or    5 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -296.665837202157206
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                         MESSAGE PASSING PERFORMANCE                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Group                2
+ MP_Bcast             4226                   3983.
+ MP_Allreduce        14507                   1983.
+ MP_Sync                57
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                           R E F E R E N C E S                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ 
+ CP2K version 2026.2, the CP2K developers group (2026).
+ CP2K is freely available from https://www.cp2k.org/ .
+ 
+ M. Iannuzzi, J. Wilhelm, F. Stein, A. Bussy, H. Elgabarty, D. Golze, A. Hehn, 
+ M. Graml, S. Marek, B. Sertcan Gökmen, C. Schran, H. Forbert, R. Z. 
+ Khaliullin, A. Kozhevnikov, M. Taillefumier, R. Meli, V. V. Rybkin, M. Brehm, 
+ R. Schade, O. Schütt, J. V. Pototschnig, H. Mirhosseini, A. Knüpfer, D. Marx, 
+ M. Krack, J. Hutter, T. D. Kühne.
+ J. Phys. Chem. B 130, 1237-1310 (2026).
+ The CP2K Program Package Made Simple.
+ https://doi.org/10.1021/acs.jpcb.5c05851
+
+ L. Wittmann, I. Gordiy, M. Friede, B. Helmich-Paris, S. Grimme, A. Hansen, M. 
+ Bursch.
+ Phys. Chem. Chem. Phys. 26, 21379-21394 (2024).
+ Extension of the D3 and D4 London dispersion corrections to the full actinides 
+ series.
+ https://doi.org/10.1039/d4cp01514b
+
+ T. D. Kühne, M. Iannuzzi, M. Del Ben, V. V. Rybkin, P. Seewald, F. Stein, T. 
+ Laino, R. Z. Khaliullin, O. Schütt, F. Schiffmann, D. Golze, J. Wilhelm, S. 
+ Chulkov, M. H. Bani-Hashemian, V. Weber, U. Borstnik, M. Taillefumier, A. S. 
+ Jakobovits, A. Lazzaro, H. Pabst, T. Müller, R. Schade, M. Guidon, S. 
+ Andermatt, N. Holmberg, G. K. Schenter, A. Hehn, A. Bussy, F. Belleflamme, G. 
+ Tabacchi, A. Glöß, M. Lass, I. Bethune, C. J. Mundy, C. Plessl, M. Watkins, 
+ J. VandeVondele, M. Krack, J. Hutter.
+ J. Chem. Phys. 152, 194103 (2020).
+ CP2K: An electronic structure and molecular dynamics software package - 
+ Quickstep: Efficient and accurate electronic structure calculations.
+ https://doi.org/10.1063/5.0007045
+
+ P. Pracht, E. Caldeweyher, S. Ehlert, S. Grimme.
+ ChemRxiv, (2019).
+ A Robust Non-Self-Consistent Tight-Binding Quantum Chemistry Method for large 
+ Molecules.
+ https://doi.org/10.26434/chemrxiv.8326202.v1
+
+ S. Grimme, C. Bannwarth, P. Shushkov.
+ J. Chem. Theory Comput. 13, 1989 (2017).
+ A Robust and Accurate Tight-Binding Quantum Chemical Method for Structures, 
+ Vibrational Frequencies, and Noncovalent Interactions of Large Molecular 
+ Systems Parametrized for All spd-Block Elements (Z = 1-86).
+ https://doi.org/10.1021/acs.jctc.7b00118
+
+ L. Goerigk, A. Hansen, C. Bauer, S. Ehrlich, A. Najibi, S. Grimme.
+ Phys. Chem. Chem. Phys. 19, 32184-32215 (2017).
+ A look at the density functional theory zoo with the advanced GMTKN55 database 
+ for general main group thermochemistry, kinetics and noncovalent interactions.
+ https://doi.org/10.1039/C7CP04913G
+
+ O. Schuett, P. Messmer, J. Hutter, J. VandeVondele.
+ Electronic Structure Calculations on Graphics Processing Units, 173-190 (2016).
+ GPU-Accelerated Sparse Matrix-Matrix Multiplication for Linear Scaling Density 
+ Functional Theory.
+ https://doi.org/10.1002/9781118670712.ch8
+
+ A. Heinecke, G. Henry, M. Hutchinson, H. Pabst.
+ Proceedings of Intl. Supercomputing Conference, 981-991 (2016).
+ LIBXSMM: Accelerating Small Matrix Multiplications by Runtime Code Generation.
+ https://doi.org/10.1109/SC.2016.83
+
+ U. Borstnik, J. VandeVondele, V. Weber, J. Hutter.
+ Parallel Comput. 40, 47-58 (2014).
+ Sparse matrix multiplication: The distributed block-compressed sparse row 
+ library.
+ https://doi.org/10.1016/j.parco.2014.03.012
+
+ A. Marek, V. Blum, R. Johanni, V. Havu, B. Lang, T. Auckenthaler, A. Heinecke, 
+ H. Bungartz, H. Lederer.
+ J. Phys. Condens. Matter 26, 213201 (2014).
+ The ELPA library: scalable parallel eigenvalue solutions for electronic 
+ structure theory and computational science.
+ https://doi.org/10.1088/0953-8984/26/21/213201
+
+ S. Grimme, S. Ehrlich, L. Goerigk.
+ J. Comput. Chem. 32, 1456 (2011).
+ Effect of the damping function in dispersion corrected density functional 
+ theory.
+ https://doi.org/10.1002/jcc.21759
+
+ S. Grimme, J. Antony, S. Ehrlich, H. Krieg.
+ J. Chem. Phys. 132, 154104 (2010).
+ A consistent and accurate ab initio parametrization of density functional 
+ dispersion correction (DFT-D) for the 94 elements H-Pu.
+ https://doi.org/10.1063/1.3382344
+
+ T. D. Kühne, M. Krack, F. R. Mohamed, M. Parrinello.
+ Phys. Rev. Lett. 98, 066401 (2007).
+ Efficient and accurate Car-Parrinello-like approach to Born-Oppenheimer 
+ molecular dynamics.
+ https://doi.org/10.1103/PhysRevLett.98.066401
+
+ M. Frigo, S. G. Johnson.
+ Proc. IEEE 93, 216-231 (2005).
+ The design and implementation of FFTW3.
+ https://doi.org/10.1109/JPROC.2004.840301
+
+ J. Kolafa.
+ J. Comput. Chem. 25, 335-342 (2004).
+ Time-reversible always stable predictor-corrector method for molecular dynamics 
+ of polarizable molecules.
+ https://doi.org/10.1002/jcc.10385
+
+ J. VandeVondele, J. Hutter.
+ J. Chem. Phys. 118, 4365-4369 (2003).
+ An efficient orbital transformation method for electronic structure 
+ calculations.
+ https://doi.org/10.1063/1.1543154
+
+ G. Henkelman, B. P. Uberuaga, H. Jonsson.
+ J. Chem. Phys. 113, 9901-9904 (2000).
+ A climbing image nudged elastic band method for finding saddle points and 
+ minimum energy paths.
+ https://doi.org/10.1063/1.1329672
+
+ G. Henkelman, H. Jonsson.
+ J. Chem. Phys. 113, 9978-9985 (2000).
+ Improved tangent estimate in the nudged elastic band method for finding minimum 
+ energy paths and saddle points.
+ https://doi.org/10.1063/1.1323224
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                T I M I N G                                  -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
+                                MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
+ CP2K                                 1  1.0    0.017    0.017  196.479  196.479
+ neb_diis                             1  2.0    0.001    0.001  196.303  196.303
+ neb_calc_energy_forces              33  3.0    0.001    0.001  196.296  196.296
+ rep_env_calc_e_f                    33  4.0    0.006    0.006  196.254  196.254
+ mp_sum_dm                         1880  7.4  104.101  104.101  104.101  104.101
+ rep_env_sync                        36  4.8    0.000    0.000  104.101  104.101
+ qs_forces                           33  5.0    0.004    0.004   92.146   92.146
+ qs_energies                         33  6.0    0.004    0.004   63.827   63.827
+ scf_env_do_scf                      33  7.0    0.002    0.002   42.360   42.360
+ build_gfn1_xtb_matrices             66  7.0   34.430   34.430   36.283   36.283
+ scf_env_do_scf_inner_loop          143  8.0    0.096    0.096   33.568   33.568
+ dbcsr_multiply_generic            2700 13.5    0.148    0.148   33.319   33.319
+ qs_scf_new_mos                     143  9.0    0.001    0.001   23.227   23.227
+ qs_scf_loop_do_ot                  143 10.0    0.001    0.001   23.226   23.226
+ multiply_cannon                   2700 14.5    0.242    0.242   22.849   22.849
+ multiply_cannon_loop              2700 15.5    0.016    0.016   22.230   22.230
+ multiply_cannon_multrec           2700 16.5   22.184   22.184   22.212   22.212
+ ot_scf_mini                        143 11.0    0.003    0.003   21.736   21.736
+ ot_mini                            143 12.0    0.001    0.001   12.827   12.827
+ qs_energies_init_hamiltonians       33  7.0    0.001    0.001   11.846   11.846
+ rebuild_ks_matrix                  176  9.4    0.001    0.001   10.802   10.802
+ build_gfn1_xtb_ks_matrix           176 10.4    0.009    0.009   10.801   10.801
+ qs_ot_get_derivative               143 13.0    0.002    0.002    9.745    9.745
+ init_scf_loop                       34  8.0    0.001    0.001    8.618    8.618
+ init_scf_run                        33  7.0    0.001    0.001    8.210    8.210
+ scf_env_initial_rho_setup           33  8.0    0.001    0.001    8.209    8.209
+ qs_ks_update_qs_env                177  9.0    0.001    0.001    7.971    7.971
+ wfi_extrapolate                     33  9.0    0.005    0.005    7.907    7.907
+ make_m2s                          5400 14.5    0.066    0.066    7.689    7.689
+ cp_dbcsr_sm_fm_multiply            185 10.7    0.006    0.006    6.573    6.573
+ build_xtb_coulomb                  176 11.4    4.323    4.323    6.362    6.362
+ make_images                       5400 15.5    0.589    0.589    6.149    6.149
+ prepare_preconditioner              34  9.0    0.000    0.000    5.511    5.511
+ make_preconditioner                 34 10.0    0.000    0.000    5.510    5.510
+ cp_dbcsr_sm_fm_multiply_core       185 11.7    0.001    0.001    4.528    4.528
+ make_full_single_inverse            34 11.0    0.004    0.004    4.406    4.406
+ write_mo_set_to_restart            143  9.0    0.074    0.074    4.143    4.143
+ -------------------------------------------------------------------------------
+
+ The number of warnings for this run is : 0
+ 
+ -------------------------------------------------------------------------------
+  **** **** ******  **  PROGRAM ENDED AT                 2026-10-27 17:32:35.025
+ ***** ** ***  *** **   PROGRAM RAN ON                              [redacted]
+ **    ****   ******    PROGRAM RAN BY                                      [redacted]
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2203949
+  **** **  *******  **  PROGRAM STOPPED IN <cluster-path>
+                                           e-cineb-20261027/jobs/cineb

@@ -1,0 +1,100 @@
+{
+  "retrieved_date": "2026-10-27",
+  "sources": [
+    {
+      "id": "course",
+      "path": "CuO.pdf",
+      "pages": 26,
+      "use": "Model, frozen layers, adjacent hcp/fcc migration, native CP2K five-image CI-NEB and vibrations; example numbers are not new calculated results."
+    },
+    {
+      "id": "gfn1",
+      "authors": "Grimme, S.; Bannwarth, C.; Shushkov, P.",
+      "title": "A Robust and Accurate Tight-Binding Quantum Chemical Method for Structures, Vibrational Frequencies, and Noncovalent Interactions of Large Molecular Systems Parametrized for All spd-Block Elements (Z = 1–86)",
+      "journal": "Journal of Chemical Theory and Computation",
+      "year": 2017,
+      "volume": 13,
+      "pages": "1989–2009",
+      "doi": "10.1021/acs.jctc.7b00118",
+      "read_source": "https://github.com/grimme-lab/xtb/blob/main/assets/references.bib",
+      "publisher_verification": "https://pubs.acs.org/toc/jctcce/13/5",
+      "use": "Original method identity; do not imply periodic Cu diffusion was a target benchmark in this article."
+    },
+    {
+      "id": "cineb",
+      "authors": "Henkelman, G.; Uberuaga, B. P.; Jónsson, H.",
+      "title": "A climbing image nudged elastic band method for finding saddle points and minimum energy paths",
+      "journal": "Journal of Chemical Physics",
+      "year": 2000,
+      "volume": 113,
+      "pages": "9901–9904",
+      "doi": "10.1063/1.1329672",
+      "read_source": "https://hj.hi.is/papers/paperCI-NEB.pdf",
+      "use": "Projected band forces, climbing image and harmonic transition-state assumptions."
+    },
+    {
+      "id": "cp2k_xtb",
+      "url": "https://manual.cp2k.org/cp2k-2026_2-branch/CP2K_INPUT/FORCE_EVAL/DFT/QS/XTB.html",
+      "use": "Native GFN1-xTB and current periodic Ewald behavior."
+    },
+    {
+      "id": "cp2k_freq",
+      "url": "https://manual.cp2k.org/cp2k-2026_2-branch/CP2K_INPUT/VIBRATIONAL_ANALYSIS.html",
+      "use": "Finite-difference DX in bohr, tight SCF and forces, fully periodic Hessian behavior; built-in thermochemistry is gas-phase molecular RRHO."
+    },
+    {
+      "id": "cp2k_ot",
+      "url": "https://manual.cp2k.org/cp2k-2026_2-branch/CP2K_INPUT/FORCE_EVAL/DFT/SCF/OT.html",
+      "use": "Numerical diagnostic: OT metallic convergence limitations; CG, line search and preconditioners."
+    },
+    {
+      "id": "cp2k_mixing",
+      "url": "https://manual.cp2k.org/cp2k-2026_2-branch/CP2K_INPUT/FORCE_EVAL/DFT/SCF/MIXING.html",
+      "use": "Density mixing with diagonalization, not with OT."
+    },
+    {
+      "id": "cp2k_smear",
+      "url": "https://manual.cp2k.org/cp2k-2026_2-branch/CP2K_INPUT/FORCE_EVAL/DFT/SCF/SMEAR.html",
+      "read": true,
+      "use": "300 K and 100 K diagnostics completed and audited. Fermi-Dirac smearing for small/zero gaps; forces are derivatives of finite-electronic-temperature free energy, not extrapolated zero-temperature energy. Keep electronic entropy separate from O vibrational correction."
+    },
+    {
+      "id": "cp2k_physcon",
+      "url": "https://raw.githubusercontent.com/cp2k/cp2k/v2026.2/src/common/physcon.F",
+      "read": true,
+      "use": "CODATA 2006 constants used by this CP2K build and printed in both outputs. Match kB and Hartree conversion when independently recomputing occupations and electronic entropy; see smearing audit."
+    },
+    {
+      "id": "xu2018",
+      "authors": "Xu, L.; Lin, J.; Bai, Y.; Mavrikakis, M.",
+      "title": "Atomic and Molecular Adsorption on Cu(111)",
+      "journal": "Topics in Catalysis",
+      "year": 2018,
+      "volume": 61,
+      "pages": "736–750",
+      "doi": "10.1007/s11244-018-0943-0",
+      "publisher": "https://link.springer.com/article/10.1007/s11244-018-0943-0",
+      "manuscript": "https://www.osti.gov/servlets/purl/1440993",
+      "publisher_abstract_read": true,
+      "full_manuscript_fetch": "attempted; verify local PDF before quantitative use",
+      "use": "Independent DFT surface comparison at 0.25 ML, distinct from present 1/16 ML fixed-Cu GFN1 model; verify functional/order/energy definitions in full text before quoting values."
+    },
+    {
+      "id": "tangent",
+      "authors": "Henkelman, G.; Jónsson, H.",
+      "title": "Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points",
+      "journal": "Journal of Chemical Physics",
+      "year": 2000,
+      "volume": 113,
+      "pages": "9978–9985",
+      "doi": "10.1063/1.1323224",
+      "verification": "CP2K 2026.2 BAND implementation output and reference list; method citation, no quantitative Cu result attributed.",
+      "use": "Improved tangent in NEB."
+    },
+    {
+      "id": "cp2k_band",
+      "url": "https://manual.cp2k.org/cp2k-2026_2-branch/CP2K_INPUT/MOTION/BAND.html",
+      "use": "BAND thresholds, climbing images and separate internal ordinary-NEB iterations; actual course input and output retained."
+    }
+  ]
+}
